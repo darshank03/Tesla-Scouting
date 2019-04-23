@@ -3,6 +3,8 @@ import com.cpjd.models.events.Event;
 import com.cpjd.models.events.EventOPR;
 import com.cpjd.models.teams.Team;
 
+
+
 public class Main {
     public static int keyToNum(String key){
         int len = key.length();
@@ -11,27 +13,13 @@ public class Main {
         return key2;
     }
 
-    /*public static void main(String[] args) {
-        TBA.setAuthToken("7OQs1gZNI4oaw5vA7KypSoIrWT24z83rvr9tkkf9XaEkoSOQETbPkseiuMGO8snZ");
-        TBA tba = new TBA();
-        Team team = tba.getTeam(4907);
-        int teamNumber = Math.toIntExact(team.getTeamNumber());
-        Event [] teamEvents = tba.getTeamEvents(teamNumber);
-        int recentEventIndex = teamEvents.length-3;
-        Event recentEvent = teamEvents[recentEventIndex];
-        System.out.println(recentEvent.getName());
-        for(EventOPR opr : tba.getOprs(recentEvent.getKey())){
-            if(opr.getTeamKey().equals(team.getKey())){
-                System.out.println(team.getKey());
-                System.out.println(opr.getCcwm());
-            }
-        }
-    }*/
      public static void main(String[] args) {
+        Object [][] teamStatArray = new Object[68][2];
 
-        TBA.setAuthToken("7OQs1gZNI4oaw5vA7KypSoIrWT24z83rvr9tkkf9XaEkoSOQETbPkseiuMGO8snZ");
+        TBA.setAuthToken("GtPgt3KxWPRM3VHt6H7ydrUcT8RXQy69Dk12p08I1uqzDevaGbzfqOuq9nwYqy5T");
         TBA tba = new TBA();
         Team [] tesla = tba.getEventTeams("2019tes");
+
         try{
             for (int i = 0; i < 8; i++){
                 Team team = tesla[i];
@@ -43,8 +31,10 @@ public class Main {
                 EventOPR[] oprs =  tba.getOprs(eventName);
                 for (EventOPR opr : oprs){
                     if(keyToNum(opr.getTeamKey()) == teamNumber){
-                        System.out.println(keyToNum(opr.getTeamKey()));
-                        System.out.println(opr.getCcwm());
+                        Object[] teamStat = new Object[2];
+                        teamStat[0] = keyToNum(opr.getTeamKey());
+                        teamStat[1] = opr.getCcwm();
+                        teamStatArray[i] = teamStat;
                     }
                 }
             }
@@ -58,8 +48,10 @@ public class Main {
                 EventOPR[] oprs =  tba.getOprs(eventName);
                 for (EventOPR opr : oprs){
                     if(keyToNum(opr.getTeamKey()) == teamNumber){
-                        System.out.println(keyToNum(opr.getTeamKey()));
-                        System.out.println(opr.getCcwm());
+                        Object[] teamStat = new Object[2];
+                        teamStat[0] = keyToNum(opr.getTeamKey());
+                        teamStat[1] = opr.getCcwm();
+                        teamStatArray[i] = teamStat;
                     }
                 }
             }
@@ -73,8 +65,25 @@ public class Main {
                 EventOPR[] oprs =  tba.getOprs(eventName);
                 for (EventOPR opr : oprs){
                     if(keyToNum(opr.getTeamKey()) == teamNumber){
-                        System.out.println(keyToNum(opr.getTeamKey()));
-                        System.out.println(opr.getCcwm());
+                        Object[] teamStat = new Object[2];
+                        teamStat[0] = keyToNum(opr.getTeamKey());
+                        teamStat[1] = opr.getCcwm();
+                        teamStatArray[i] = teamStat;
+                    }
+                }
+            }
+            for(int i = 13; i < 14; i++){
+                Team team = tesla[i];
+                int teamNumber = Math.toIntExact(team.getTeamNumber());
+                Event recentEvent = tba.getEvent("2019necmp");
+                String eventName = recentEvent.getKey();
+                EventOPR[] oprs =  tba.getOprs(eventName);
+                for (EventOPR opr : oprs){
+                    if(keyToNum(opr.getTeamKey()) == teamNumber){
+                        Object[] teamStat = new Object[2];
+                        teamStat[0] = keyToNum(opr.getTeamKey());
+                        teamStat[1] = opr.getCcwm();
+                        teamStatArray[i] = teamStat;
                     }
                 }
             }
@@ -82,14 +91,16 @@ public class Main {
                 Team team = tesla[i];
                 int teamNumber = Math.toIntExact(team.getTeamNumber());
                 Event [] teamEvents = tba.getTeamEvents(teamNumber);
-                int recentEventIndex = teamEvents.length-4;
+                int recentEventIndex = teamEvents.length-2;
                 Event recentEvent = teamEvents[recentEventIndex];
                 String eventName = recentEvent.getKey();
                 EventOPR[] oprs =  tba.getOprs(eventName);
                 for (EventOPR opr : oprs){
                     if(keyToNum(opr.getTeamKey()) == teamNumber){
-                        System.out.println(keyToNum(opr.getTeamKey()));
-                        System.out.println(opr.getCcwm());
+                        Object[] teamStat = new Object[2];
+                        teamStat[0] = keyToNum(opr.getTeamKey());
+                        teamStat[1] = opr.getCcwm();
+                        teamStatArray[i] = teamStat;
                     }
                 }
             }
@@ -103,8 +114,10 @@ public class Main {
                 EventOPR[] oprs =  tba.getOprs(eventName);
                 for (EventOPR opr : oprs){
                     if(keyToNum(opr.getTeamKey()) == teamNumber){
-                        System.out.println(keyToNum(opr.getTeamKey()));
-                        System.out.println(opr.getCcwm());
+                        Object[] teamStat = new Object[2];
+                        teamStat[0] = keyToNum(opr.getTeamKey());
+                        teamStat[1] = opr.getCcwm();
+                        teamStatArray[i] = teamStat;
                     }
                 }
             }
@@ -118,8 +131,10 @@ public class Main {
                 EventOPR[] oprs =  tba.getOprs(eventName);
                 for (EventOPR opr : oprs){
                     if(keyToNum(opr.getTeamKey()) == teamNumber){
-                        System.out.println(keyToNum(opr.getTeamKey()));
-                        System.out.println(opr.getCcwm());
+                        Object[] teamStat = new Object[2];
+                        teamStat[0] = keyToNum(opr.getTeamKey());
+                        teamStat[1] = opr.getCcwm();
+                        teamStatArray[i] = teamStat;
                     }
                 }
             }
@@ -133,8 +148,10 @@ public class Main {
                 EventOPR[] oprs =  tba.getOprs(eventName);
                 for (EventOPR opr : oprs){
                     if(keyToNum(opr.getTeamKey()) == teamNumber){
-                        System.out.println(keyToNum(opr.getTeamKey()));
-                        System.out.println(opr.getCcwm());
+                        Object[] teamStat = new Object[2];
+                        teamStat[0] = keyToNum(opr.getTeamKey());
+                        teamStat[1] = opr.getCcwm();
+                        teamStatArray[i] = teamStat;
                     }
                 }
             }
@@ -148,8 +165,10 @@ public class Main {
                 EventOPR[] oprs =  tba.getOprs(eventName);
                 for (EventOPR opr : oprs){
                     if(keyToNum(opr.getTeamKey()) == teamNumber){
-                        System.out.println(keyToNum(opr.getTeamKey()));
-                        System.out.println(opr.getCcwm());
+                        Object[] teamStat = new Object[2];
+                        teamStat[0] = keyToNum(opr.getTeamKey());
+                        teamStat[1] = opr.getCcwm();
+                        teamStatArray[i] = teamStat;
                     }
                 }
             }
@@ -163,8 +182,10 @@ public class Main {
                 EventOPR[] oprs =  tba.getOprs(eventName);
                 for (EventOPR opr : oprs){
                     if(keyToNum(opr.getTeamKey()) == teamNumber){
-                        System.out.println(keyToNum(opr.getTeamKey()));
-                        System.out.println(opr.getCcwm());
+                        Object[] teamStat = new Object[2];
+                        teamStat[0] = keyToNum(opr.getTeamKey());
+                        teamStat[1] = opr.getCcwm();
+                        teamStatArray[i] = teamStat;
                     }
                 }
             }
@@ -178,8 +199,10 @@ public class Main {
                 EventOPR[] oprs =  tba.getOprs(eventName);
                 for (EventOPR opr : oprs){
                     if(keyToNum(opr.getTeamKey()) == teamNumber){
-                        System.out.println(keyToNum(opr.getTeamKey()));
-                        System.out.println(opr.getCcwm());
+                        Object[] teamStat = new Object[2];
+                        teamStat[0] = keyToNum(opr.getTeamKey());
+                        teamStat[1] = opr.getCcwm();
+                        teamStatArray[i] = teamStat;
                     }
                 }
             }
@@ -193,18 +216,37 @@ public class Main {
                 EventOPR[] oprs =  tba.getOprs(eventName);
                 for (EventOPR opr : oprs){
                     if(keyToNum(opr.getTeamKey()) == teamNumber){
-                        System.out.println(keyToNum(opr.getTeamKey()));
-                        System.out.println(opr.getCcwm());
+                        Object[] teamStat = new Object[2];
+                        teamStat[0] = keyToNum(opr.getTeamKey());
+                        teamStat[1] = opr.getCcwm();
+                        teamStatArray[i] = teamStat;
                     }
                 }
             }
 
+            for(int i=0; i < teamStatArray.length; i++){
+                for(int j=0; j < teamStatArray.length-i-1; j++){
+                    if(Double.parseDouble(teamStatArray[j][1].toString()) < Double.parseDouble(teamStatArray[j+1][1].toString())){
+                        Object [] tmp = teamStatArray[j];
+                        teamStatArray[j] = teamStatArray[j+1];
+                        teamStatArray[j+1] = tmp;
+                    }
+                }
+            }
+            for(Object [] h : teamStatArray){
+                for(Object g:h){
+                    System.out.println(g);
+                }
+            }
+
         }
+
         catch(Exception e){
             e.printStackTrace();
         }
 
 
     }
+
 
 }
