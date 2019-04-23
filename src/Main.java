@@ -7,7 +7,6 @@ import com.cpjd.models.teams.Team;
 
 public class Main {
     public static int keyToNum(String key){
-        int len = key.length();
         key = key.replace("frc", "");
         int key2 = Integer.parseInt(key);
         return key2;
