@@ -8,7 +8,7 @@ import com.cpjd.models.events.EventOPR;
 import com.cpjd.models.teams.Team;
 
 public class CcwmFromTesla {
-    public static void ccwmTesla(){
+    public static void oprTesla(){
         Object [][] teamStatArray = new Object[68][2];
 
         TBA.setAuthToken("GtPgt3KxWPRM3VHt6H7ydrUcT8RXQy69Dk12p08I1uqzDevaGbzfqOuq9nwYqy5T");
@@ -28,7 +28,7 @@ public class CcwmFromTesla {
                     if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -45,7 +45,7 @@ public class CcwmFromTesla {
                     if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -62,7 +62,7 @@ public class CcwmFromTesla {
                     if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -77,7 +77,7 @@ public class CcwmFromTesla {
                     if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -94,7 +94,7 @@ public class CcwmFromTesla {
                     if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -111,7 +111,7 @@ public class CcwmFromTesla {
                     if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -128,7 +128,7 @@ public class CcwmFromTesla {
                     if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -145,7 +145,7 @@ public class CcwmFromTesla {
                     if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -162,7 +162,7 @@ public class CcwmFromTesla {
                     if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -179,7 +179,7 @@ public class CcwmFromTesla {
                     if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -196,7 +196,7 @@ public class CcwmFromTesla {
                     if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -213,7 +213,7 @@ public class CcwmFromTesla {
                     if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }

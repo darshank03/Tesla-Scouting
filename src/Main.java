@@ -27,7 +27,7 @@ public class Main {
                 Team team = tesla[i];
                 int teamNumber = Math.toIntExact(team.getTeamNumber());
                 Event[] teamEvents = tba.getTeamEvents(teamNumber);
-                int recentEventIndex = teamEvents.length - 2;
+                int recentEventIndex = teamEvents.length - 1;
                 Event recentEvent = teamEvents[recentEventIndex];
                 String eventName = recentEvent.getKey();
                 EventOPR[] oprs = tba.getOprs(eventName);
@@ -35,7 +35,7 @@ public class Main {
                     if (Main.keyToNum(opr.getTeamKey()) == teamNumber) {
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -44,7 +44,7 @@ public class Main {
                 Team team = tesla[i];
                 int teamNumber = Math.toIntExact(team.getTeamNumber());
                 Event[] teamEvents = tba.getTeamEvents(teamNumber);
-                int recentEventIndex = teamEvents.length - 3;
+                int recentEventIndex = teamEvents.length - 1;
                 Event recentEvent = teamEvents[recentEventIndex];
                 String eventName = recentEvent.getKey();
                 EventOPR[] oprs = tba.getOprs(eventName);
@@ -52,7 +52,7 @@ public class Main {
                     if (Main.keyToNum(opr.getTeamKey()) == teamNumber) {
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -61,7 +61,7 @@ public class Main {
                 Team team = tesla[i];
                 int teamNumber = Math.toIntExact(team.getTeamNumber());
                 Event[] teamEvents = tba.getTeamEvents(teamNumber);
-                int recentEventIndex = teamEvents.length - 2;
+                int recentEventIndex = teamEvents.length - 1;
                 Event recentEvent = teamEvents[recentEventIndex];
                 String eventName = recentEvent.getKey();
                 EventOPR[] oprs = tba.getOprs(eventName);
@@ -69,7 +69,7 @@ public class Main {
                     if (Main.keyToNum(opr.getTeamKey()) == teamNumber) {
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -77,14 +77,14 @@ public class Main {
             for (int i = 13; i < 14; i++) {
                 Team team = tesla[i];
                 int teamNumber = Math.toIntExact(team.getTeamNumber());
-                Event recentEvent = tba.getEvent("2019necmp");
+                Event recentEvent = tba.getEvent("2019tes");
                 String eventName = recentEvent.getKey();
                 EventOPR[] oprs = tba.getOprs(eventName);
                 for (EventOPR opr : oprs) {
                     if (Main.keyToNum(opr.getTeamKey()) == teamNumber) {
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -93,7 +93,7 @@ public class Main {
                 Team team = tesla[i];
                 int teamNumber = Math.toIntExact(team.getTeamNumber());
                 Event[] teamEvents = tba.getTeamEvents(teamNumber);
-                int recentEventIndex = teamEvents.length - 2;
+                int recentEventIndex = teamEvents.length - 1;
                 Event recentEvent = teamEvents[recentEventIndex];
                 String eventName = recentEvent.getKey();
                 EventOPR[] oprs = tba.getOprs(eventName);
@@ -101,7 +101,7 @@ public class Main {
                     if (Main.keyToNum(opr.getTeamKey()) == teamNumber) {
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -110,7 +110,7 @@ public class Main {
                 Team team = tesla[i];
                 int teamNumber = Math.toIntExact(team.getTeamNumber());
                 Event[] teamEvents = tba.getTeamEvents(teamNumber);
-                int recentEventIndex = teamEvents.length - 2;
+                int recentEventIndex = teamEvents.length - 1;
                 Event recentEvent = teamEvents[recentEventIndex];
                 String eventName = recentEvent.getKey();
                 EventOPR[] oprs = tba.getOprs(eventName);
@@ -118,7 +118,7 @@ public class Main {
                     if (Main.keyToNum(opr.getTeamKey()) == teamNumber) {
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -127,7 +127,7 @@ public class Main {
                 Team team = tesla[i];
                 int teamNumber = Math.toIntExact(team.getTeamNumber());
                 Event[] teamEvents = tba.getTeamEvents(teamNumber);
-                int recentEventIndex = teamEvents.length - 3;
+                int recentEventIndex = teamEvents.length - 1;
                 Event recentEvent = teamEvents[recentEventIndex];
                 String eventName = recentEvent.getKey();
                 EventOPR[] oprs = tba.getOprs(eventName);
@@ -135,7 +135,7 @@ public class Main {
                     if (Main.keyToNum(opr.getTeamKey()) == teamNumber) {
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -144,7 +144,7 @@ public class Main {
                 Team team = tesla[i];
                 int teamNumber = Math.toIntExact(team.getTeamNumber());
                 Event[] teamEvents = tba.getTeamEvents(teamNumber);
-                int recentEventIndex = teamEvents.length - 2;
+                int recentEventIndex = teamEvents.length - 1;
                 Event recentEvent = teamEvents[recentEventIndex];
                 String eventName = recentEvent.getKey();
                 EventOPR[] oprs = tba.getOprs(eventName);
@@ -152,7 +152,7 @@ public class Main {
                     if (Main.keyToNum(opr.getTeamKey()) == teamNumber) {
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -161,7 +161,7 @@ public class Main {
                 Team team = tesla[i];
                 int teamNumber = Math.toIntExact(team.getTeamNumber());
                 Event[] teamEvents = tba.getTeamEvents(teamNumber);
-                int recentEventIndex = teamEvents.length - 3;
+                int recentEventIndex = teamEvents.length - 1;
                 Event recentEvent = teamEvents[recentEventIndex];
                 String eventName = recentEvent.getKey();
                 EventOPR[] oprs = tba.getOprs(eventName);
@@ -169,7 +169,7 @@ public class Main {
                     if (Main.keyToNum(opr.getTeamKey()) == teamNumber) {
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -178,7 +178,7 @@ public class Main {
                 Team team = tesla[i];
                 int teamNumber = Math.toIntExact(team.getTeamNumber());
                 Event[] teamEvents = tba.getTeamEvents(teamNumber);
-                int recentEventIndex = teamEvents.length - 2;
+                int recentEventIndex = teamEvents.length - 1;
                 Event recentEvent = teamEvents[recentEventIndex];
                 String eventName = recentEvent.getKey();
                 EventOPR[] oprs = tba.getOprs(eventName);
@@ -186,7 +186,7 @@ public class Main {
                     if (Main.keyToNum(opr.getTeamKey()) == teamNumber) {
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -195,7 +195,7 @@ public class Main {
                 Team team = tesla[i];
                 int teamNumber = Math.toIntExact(team.getTeamNumber());
                 Event[] teamEvents = tba.getTeamEvents(teamNumber);
-                int recentEventIndex = teamEvents.length - 3;
+                int recentEventIndex = teamEvents.length - 1;
                 Event recentEvent = teamEvents[recentEventIndex];
                 String eventName = recentEvent.getKey();
                 EventOPR[] oprs = tba.getOprs(eventName);
@@ -203,7 +203,7 @@ public class Main {
                     if (Main.keyToNum(opr.getTeamKey()) == teamNumber) {
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -212,7 +212,7 @@ public class Main {
                 Team team = tesla[i];
                 int teamNumber = Math.toIntExact(team.getTeamNumber());
                 Event[] teamEvents = tba.getTeamEvents(teamNumber);
-                int recentEventIndex = teamEvents.length - 2;
+                int recentEventIndex = teamEvents.length - 1;
                 Event recentEvent = teamEvents[recentEventIndex];
                 String eventName = recentEvent.getKey();
                 EventOPR[] oprs = tba.getOprs(eventName);
@@ -220,7 +220,7 @@ public class Main {
                     if (Main.keyToNum(opr.getTeamKey()) == teamNumber) {
                         Object[] teamStat = new Object[2];
                         teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                        teamStat[1] = opr.getCcwm();
+                        teamStat[1] = opr.getOpr();
                         teamStatArray[i] = teamStat;
                     }
                 }
@@ -250,8 +250,16 @@ public class Main {
             }
             if(ourScore < theirScore){
                 System.out.println("We will lose");
-            }else{
+                System.out.println("our opr is "+ourScore);
+                System.out.println("their opr is "+theirScore);
+            }else if(ourScore > theirScore){
                 System.out.println("We will win");
+                System.out.println("our opr is "+ourScore);
+                System.out.println("their opr is "+theirScore);
+            }else{
+                System.out.println("TIE");
+                System.out.println("our opr is "+ourScore);
+                System.out.println("their opr is "+theirScore);
             }
 
 
@@ -283,5 +291,6 @@ public class Main {
         willWeWin(Array8);
         willWeWin(Array9);
         willWeWin(Array10);
+
      }
 }
