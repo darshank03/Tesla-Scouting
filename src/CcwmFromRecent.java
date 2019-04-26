@@ -5,7 +5,7 @@ import com.cpjd.models.teams.Team;
 
 
 class CcwmFromRecent {
-    static void ccwmRecent(){
+    static void oprRecent(){
 
             Object [][] teamStatArray = new Object[68][2];
 
@@ -26,7 +26,7 @@ class CcwmFromRecent {
                         if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                             Object[] teamStat = new Object[2];
                             teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                            teamStat[1] = opr.getCcwm();
+                            teamStat[1] = opr.getOpr();
                             teamStatArray[i] = teamStat;
                         }
                     }
@@ -43,7 +43,7 @@ class CcwmFromRecent {
                         if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                             Object[] teamStat = new Object[2];
                             teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                            teamStat[1] = opr.getCcwm();
+                            teamStat[1] = opr.getOpr();
                             teamStatArray[i] = teamStat;
                         }
                     }
@@ -60,7 +60,7 @@ class CcwmFromRecent {
                         if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                             Object[] teamStat = new Object[2];
                             teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                            teamStat[1] = opr.getCcwm();
+                            teamStat[1] = opr.getOpr();
                             teamStatArray[i] = teamStat;
                         }
                     }
@@ -75,7 +75,7 @@ class CcwmFromRecent {
                         if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                             Object[] teamStat = new Object[2];
                             teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                            teamStat[1] = opr.getCcwm();
+                            teamStat[1] = opr.getOpr();
                             teamStatArray[i] = teamStat;
                         }
                     }
@@ -92,7 +92,7 @@ class CcwmFromRecent {
                         if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                             Object[] teamStat = new Object[2];
                             teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                            teamStat[1] = opr.getCcwm();
+                            teamStat[1] = opr.getOpr();
                             teamStatArray[i] = teamStat;
                         }
                     }
@@ -109,7 +109,7 @@ class CcwmFromRecent {
                         if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                             Object[] teamStat = new Object[2];
                             teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                            teamStat[1] = opr.getCcwm();
+                            teamStat[1] = opr.getOpr();
                             teamStatArray[i] = teamStat;
                         }
                     }
@@ -126,7 +126,7 @@ class CcwmFromRecent {
                         if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                             Object[] teamStat = new Object[2];
                             teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                            teamStat[1] = opr.getCcwm();
+                            teamStat[1] = opr.getOpr();
                             teamStatArray[i] = teamStat;
                         }
                     }
@@ -143,7 +143,7 @@ class CcwmFromRecent {
                         if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                             Object[] teamStat = new Object[2];
                             teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                            teamStat[1] = opr.getCcwm();
+                            teamStat[1] = opr.getOpr();
                             teamStatArray[i] = teamStat;
                         }
                     }
@@ -160,7 +160,7 @@ class CcwmFromRecent {
                         if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                             Object[] teamStat = new Object[2];
                             teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                            teamStat[1] = opr.getCcwm();
+                            teamStat[1] = opr.getOpr();
                             teamStatArray[i] = teamStat;
                         }
                     }
@@ -177,7 +177,7 @@ class CcwmFromRecent {
                         if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                             Object[] teamStat = new Object[2];
                             teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                            teamStat[1] = opr.getCcwm();
+                            teamStat[1] = opr.getOpr();
                             teamStatArray[i] = teamStat;
                         }
                     }
@@ -194,7 +194,7 @@ class CcwmFromRecent {
                         if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                             Object[] teamStat = new Object[2];
                             teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                            teamStat[1] = opr.getCcwm();
+                            teamStat[1] = opr.getOpr();
                             teamStatArray[i] = teamStat;
                         }
                     }
@@ -211,7 +211,7 @@ class CcwmFromRecent {
                         if(Main.keyToNum(opr.getTeamKey()) == teamNumber){
                             Object[] teamStat = new Object[2];
                             teamStat[0] = Main.keyToNum(opr.getTeamKey());
-                            teamStat[1] = opr.getCcwm();
+                            teamStat[1] = opr.getOpr();
                             teamStatArray[i] = teamStat;
                         }
                     }
