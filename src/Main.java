@@ -21,6 +21,8 @@ public class Main {
         TBA.setAuthToken("GtPgt3KxWPRM3VHt6H7ydrUcT8RXQy69Dk12p08I1uqzDevaGbzfqOuq9nwYqy5T");
         TBA tba = new TBA();
         Team[] tesla = tba.getEventTeams("2019tes");
+        
+        // All these different for loops need to be used because certain teams did not have proper data for their most recent events, so data from earlier events needed to be used for those teams.
 
         try {
             for (int i = 0; i < 8; i++) {
